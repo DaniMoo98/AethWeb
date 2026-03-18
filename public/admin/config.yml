@@ -1,0 +1,108 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://aethrya.pages.dev
+display_url: https://aethrya.pages.dev
+
+collections:
+  # ---- RULES ----
+  - name: "rules"
+    label: "Rules"
+    folder: "content/rules"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "General Rules"
+          - "Building Rules"
+          - "Combat Rules"
+          - "Consequence Rules"
+          - "Charm & Dominate"
+          - "Infiltration & Siege"
+          - "Tracking & POIs"
+          - "Theft Rules"
+          - "Practical Disguise"
+          - "Hub Cities & Guards"
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ---- SETTING ----
+  - name: "setting"
+    label: "Setting"
+    folder: "content/setting"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Region"
+        name: "region"
+        widget: "select"
+        options:
+          - "The Sword Coast"
+          - "Leilon"
+          - "Phandalin"
+          - "Sombersky"
+          - "The Lost Hills"
+        required: false
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ---- CLASSES ----
+  - name: "classes"
+    label: "Classes"
+    folder: "content/classes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Class Icon", name: "icon", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Subclasses"
+        name: "subclasses"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ---- RACES ----
+  - name: "races"
+    label: "Races"
+    folder: "content/races"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Rarity"
+        name: "rarity"
+        widget: "select"
+        options:
+          - "Common"
+          - "Uncommon"
+          - "Rare"
+          - "Limited"
+          - "Malicious"
+      - { label: "Race Portrait", name: "image", widget: "image", required: false }
+      - { label: "Appearance Notes", name: "appearance", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ---- GUIDES ----
+  - name: "guides"
+    label: "Guides"
+    folder: "content/guides"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
