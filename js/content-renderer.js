@@ -17,6 +17,16 @@ async function initContentRenderer() {
   if (!container) return;
 
   // Determine content path from URL
+  const params = new URLSearchParams(window.location.search);
+  let contentPath = params.get('p') || window.location.hash.slice(1);
+
+  if (!contentPath) {
+    contentPath = 'home';
+  }
+
+  // Clean the path
+  contentPath = contentPath.replace(/^\//, '').replace(/\.md$/, '');
+
   // Build the fetch URL
   const mdUrl = `/content/${contentPath}.md`;
 
@@ -471,7 +481,7 @@ function fallbackRender(md) {
   html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
   html = html.replace(/^\* (.*$)/gim, '<li>$1</li>');
   html = html.replace(/^- (.*$)/gim, '<li>$1</li>');
-  html = html.replace(/\*\*\*(.*)\*\*\*/gim, '<strong><em>$1</em></strong>');
+  html = html.replace(/\*\*\***(.*)\*\*\*/gim, '<strong><em>$1</em></strong>');
   html = html.replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>');
   html = html.replace(/\*(.*)\*/gim, '<em>$1</em>');
   html = html.replace(/^&gt; (.*$)/gim, '<blockquote>$1</blockquote>');
