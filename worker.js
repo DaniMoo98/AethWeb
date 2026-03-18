@@ -20,10 +20,20 @@ export default {
       });
     }
 
-    // Only accept POST to /api/chronicler
     const url = new URL(request.url);
+
+    // If not the API, serve static assets
+    if (!url.pathname.startsWith('/api/')) {
+      if (typeof env.ASSETS !== 'undefined') {
+        return env.ASSETS.fetch(request);
+      }
+      // Fallback if env.ASSETS is missing (depends on wrangler version)
+      return new Response("Asset service unavailable", { status: 500 });
+    }
+
+    // Only accept POST to /api/chronicler
     if (request.method !== 'POST' || url.pathname !== '/api/chronicler') {
-      return new Response(JSON.stringify({ error: 'Not found' }), {
+      return new Response(JSON.stringify({ error: 'Endpoint not found or method not allowed' }), {
         status: 404,
         headers: { ...corsHeaders(), 'Content-Type': 'application/json' },
       });
@@ -54,7 +64,7 @@ export default {
       if (history && Array.isArray(history)) {
         for (const msg of history.slice(-10)) {
           contents.push({
-            role: msg.role === 'user' - 'user' : 'model',
+            role: msg.role === 'user' ? 'user' : 'model',
             parts: [{ text: msg.content }],
           });
         }
@@ -69,7 +79,7 @@ export default {
       }
 
       // Call Gemini API
-      const geminiResponse = await fetch(`${GEMINI_API_URL}-key=${apiKey}`, {
+      const geminiResponse = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -96,7 +106,7 @@ export default {
       }
 
       const data = await geminiResponse.json();
-      const reply = data.candidates-.[0]-.content-.parts-.[0]-.text
+      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text
         || 'The scrying pool grows dim... I cannot form a response at this moment.';
 
       return new Response(JSON.stringify({ reply }), {
