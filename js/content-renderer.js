@@ -29,14 +29,17 @@ async function initContentRenderer() {
 
   // Build the fetch URL
   const mdUrl = `/content/${contentPath}.md`;
+  console.log('Fetching markdown from:', mdUrl);
 
   try {
     const response = await fetch(mdUrl);
     if (!response.ok) {
-      throw new Error(`Content not found (${response.status})`);
+        console.error('Fetch failed for:', mdUrl, response.status);
+        throw new Error(`Content not found (${response.status})`);
     }
 
     let markdown = await response.text();
+    console.log('Markdown received, length:', markdown.length);
 
     // Parse YAML frontmatter
     const frontmatter = parseFrontmatter(markdown);
