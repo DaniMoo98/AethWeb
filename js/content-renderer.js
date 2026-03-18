@@ -491,12 +491,13 @@ function fallbackRender(md) {
   html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
   html = html.replace(/^\* (.*$)/gim, '<li>$1</li>');
   html = html.replace(/^- (.*$)/gim, '<li>$1</li>');
-  html = html.replace(/\*\*\***(.*)\*\*\*/gim, '<strong><em>$1</em></strong>');
-  html = html.replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>');
-  html = html.replace(/\*(.*)\*/gim, '<em>$1</em>');
+  html = html.replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>');
+  html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
   html = html.replace(/^&gt; (.*$)/gim, '<blockquote>$1</blockquote>');
   html = html.replace(/^---$/gm, '<hr>');
   html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
+
   
   // Wrap list items
   html = html.replace(/(<li>.*<\/li>\n-)+/g, '<ul>$&</ul>');
