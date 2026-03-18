@@ -427,8 +427,8 @@ function escapeHtml(text) {
 
 // ---- YAML Frontmatter Parser (lightweight) ----
 function parseFrontmatter(text) {
-  // Primary: Match standard triple-dash block
-  const tripleDashMatch = text.match(/^---\n([\s\S]*-)\n---\n([\s\S]*)$/);
+  // Primary: Match standard triple-dash block (non-greedy)
+  const tripleDashMatch = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   
   if (tripleDashMatch) {
     const yamlStr = tripleDashMatch[1];
