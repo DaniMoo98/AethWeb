@@ -5,7 +5,7 @@ category: "Guides"
 
 # ROLEPLAY GUIDE
 
-This guide sets baseline etiquette for consistent, collaborative roleplay on Crossroads.
+This guide sets baseline etiquette for consistent, collaborative roleplay on aethrya.
 
 ## Core Standard
 

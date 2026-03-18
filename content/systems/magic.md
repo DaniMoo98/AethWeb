@@ -5,7 +5,7 @@ category: "Systems"
 
 # MAGIC
 
-Magic on Crossroads is organized by spell mastery rank and ritual/fluff utility categories.
+Magic on aethrya is organized by spell mastery rank and ritual/fluff utility categories.
 
 ## Spell Mastery Tracks
 

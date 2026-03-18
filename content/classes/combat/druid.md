@@ -40,7 +40,7 @@ ROLEPLAYING AS DOMESTIC ANIMALS
 
 As protectors of the natural world in whatever realm they inhabit and tend to, Druids possess a unique affinity to Wildshape into beasts. Having been granted this ability by spirits of nature or the blessing of a deity maintaining balance as they see it within the realms, the art of transforming into an animal is never one to be taken lightly - Druids are forces of maintaining balance as they see it, and abusing their source of power for mundane tasks without purpose to aiding the protection of life, death, and the natural order is a gross misstep.
 
-As such, it is an expectation that Druids on Crossroads do not engage in roleplay while wildshaped that would indicate they are domestic animals or 'pets'. This behavior is uncharacteristic of the traits carried by Druids within the setting, and should be wholly avoided at all costs. It is considered a lorebreak.
+As such, it is an expectation that Druids on aethrya do not engage in roleplay while wildshaped that would indicate they are domestic animals or 'pets'. This behavior is uncharacteristic of the traits carried by Druids within the setting, and should be wholly avoided at all costs. It is considered a lorebreak.
 
 In addition, druids cannot speak any language in Wildshape, and can only communicate to a player who has the speak with animals ability.
 

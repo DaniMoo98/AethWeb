@@ -521,7 +521,7 @@ Investigation, Knowledge: History, Insight, Streetwise, Deception, Intimidation 
 
 You are able to place a Merchant NPC at your player base. This requires a ticket to set up.
 
-The merchant NPC can only be used to host Crossroads  gathered and crafted economy items. Anything posted outside of that will be deleted, and if used to exploit selling/handing out racial or class kits will be subjected to disciplinary action.
+The merchant NPC can only be used to host aethrya  gathered and crafted economy items. Anything posted outside of that will be deleted, and if used to exploit selling/handing out racial or class kits will be subjected to disciplinary action.
 
 </div>
 
@@ -568,7 +568,7 @@ This is not a magical means of charm.
 
 You are able to place an additional Merchant NPC at a Faction Hub. This requires a ticket to set up.
 
-The merchant NPC can only be used to host Crossroads  gathered and crafted economy items. Anything posted outside of that will be deleted, and if used to exploit selling/handing out racial or class kits will be subjected to disciplinary action.
+The merchant NPC can only be used to host aethrya  gathered and crafted economy items. Anything posted outside of that will be deleted, and if used to exploit selling/handing out racial or class kits will be subjected to disciplinary action.
 
 </div>
 

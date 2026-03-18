@@ -25,7 +25,7 @@ Three great cities anchor civilization along the Sword Coast North. Each began a
 
 *"Where order is carved from chaos, stone by stone."*
 
-Leilon stands where it always has — at the crossroads of the High Road and the coast — but in Aethrya, it has grown into something greater. What was once a modest town is now a fortified city-state, its walls reinforced by generations of siege and storm.
+Leilon stands where it always has — at the aethrya of the High Road and the coast — but in Aethrya, it has grown into something greater. What was once a modest town is now a fortified city-state, its walls reinforced by generations of siege and storm.
 
 - **Government:** Military Council — ruled by a triumvirate of generals and marshals
 - **Philosophy:** Strength through discipline. Law through force. Survival through unity.
@@ -48,7 +48,7 @@ Phandalin was always a town of second chances. In Aethrya, that identity has cry
 - **Philosophy:** Freedom through commerce. Truth through inquiry. Power through knowledge.
 - **Character:** Phandalin thrives on openness and trade. It welcomes all races, all creeds, all walks of life. But this openness is also its greatest vulnerability — spies move freely, cults take root easily, and the line between freedom and lawlessness blurs daily.
 - **Key Features:**
-  - The **Crossroads Market** — the largest open trading hub on the Sword Coast, where anything can be bought or sold
+  - The **aethrya Market** — the largest open trading hub on the Sword Coast, where anything can be bought or sold
   - The **Archive of Echoes** — a library rumored to contain books from both Aethrya *and* the original timeline
   - The **Wanderer's Gate** — the only standing portal confirmed to flicker between realities
 - **Notable Tensions:** Phandalin's tolerance makes it a breeding ground for Fragment-seekers and reality cults. The Assembly struggles to balance freedom with the growing threat of those who would exploit the Fracturing.

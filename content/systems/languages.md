@@ -5,7 +5,7 @@ category: "Systems"
 
 # LANGUAGES
 
-Crossroads separates language use into two progression tracks.
+aethrya separates language use into two progression tracks.
 
 ## Language Tiers
 

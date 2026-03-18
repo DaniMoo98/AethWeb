@@ -175,7 +175,7 @@ Article template
 Generic article
 (CR - Article with Sticky Sidebar)
 World
-CROSSROADS
+aethrya
 Category
 Professions
 Author
@@ -290,9 +290,9 @@ $(this).remove();
 $( "span.visibility-toggler" ).addClass('d-inline-block');
 $( "div.visibility-toggler, blockquote.visibility-toggler, li.visibility-toggler" ).addClass('d-block');
 var displayToC = false;
-var contentCategories = '/w/crossroads-chancellor/load/categories';
-var contentMaps = '/w/crossroads-chancellor/load/maps';
-var contentTimelines = '/w/crossroads-chancellor/load/timelines';
+var contentCategories = '/w/aethrya-chancellor/load/categories';
+var contentMaps = '/w/aethrya-chancellor/load/maps';
+var contentTimelines = '/w/aethrya-chancellor/load/timelines';
 var input = $('input.typeahead');
 var form = $('#search-button');
 input.typeahead({

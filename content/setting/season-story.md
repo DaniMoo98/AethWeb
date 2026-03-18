@@ -55,7 +55,7 @@ Unofficially, the Council is searching for something. Agents of the Silent Watch
 
 Phandalin's Inquirers' Circle has mobilized in force. Researchers flood the Archive of Echoes, seeking references to the Resonance in texts both old and impossibly new. The Wanderer's Gate — the portal known to flicker between realities — has been placed under round-the-clock observation.
 
-Meanwhile, the Crossroads Market buzzes with a new kind of trade: **Fragment rumors**. Traders sell maps to suspected Fragment sites. Mercenaries offer their services as Fragment escorts. Cults promising Fragment-based salvation have tripled in the last month.
+Meanwhile, the aethrya Market buzzes with a new kind of trade: **Fragment rumors**. Traders sell maps to suspected Fragment sites. Mercenaries offer their services as Fragment escorts. Cults promising Fragment-based salvation have tripled in the last month.
 
 The Assembly debates regulation. The debates go nowhere.
 

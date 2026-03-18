@@ -5,7 +5,7 @@ category: "Guides"
 
 # DUNGEON MASTER GUIDE
 
-Crossroads DMs are worldbuilders and facilitators. The goal is to create opportunities for player stories, not to replace them.
+aethrya DMs are worldbuilders and facilitators. The goal is to create opportunities for player stories, not to replace them.
 
 ## DM Event Philosophy
 
@@ -16,7 +16,7 @@ Crossroads DMs are worldbuilders and facilitators. The goal is to create opportu
 
 ## Event Types
 
-### Crossroads DM Events
+### aethrya DM Events
 
 - Staff-run events tied to active plots, factions, and world state.
 - Can be small-party or larger server-impact sessions.
