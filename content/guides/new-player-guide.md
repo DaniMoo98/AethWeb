@@ -5,7 +5,7 @@ category: "Guides"
 
 # NEW PLAYER GUIDE
 
-Welcome to Crossroads RP. This page is the fast path from first join to approved character.
+Welcome to Aethrya RP. This page is the fast path from first join to approved character.
 
 ## 1) Start Here
 
