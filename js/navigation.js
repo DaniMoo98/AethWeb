@@ -7,7 +7,39 @@ document.addEventListener('DOMContentLoaded', () => {
   initSidebarNav();
   initMobileToggle();
   initSearchFilter();
+  initSmoothNavigation();
 });
+
+// Sidebar active-state updates on navigation
+window.addEventListener('popstate', () => highlightActivePage());
+window.addEventListener('hashchange', () => highlightActivePage());
+
+function initSmoothNavigation() {
+  document.querySelectorAll('.nav-submenu a, .nav-link[data-section="home"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && (href.startsWith('/page?p=') || href === '/')) {
+        e.preventDefault();
+        history.pushState(null, '', href);
+        
+        // Trigger content reload
+        if (typeof initContentRenderer === 'function') {
+            initContentRenderer();
+        }
+        
+        // Highlight active
+        highlightActivePage();
+        
+        // Close mobile sidebar on link click
+        document.querySelector('.sidebar')?.classList.remove('open');
+        document.querySelector('.sidebar-overlay')?.classList.remove('visible');
+        document.querySelector('.sidebar-toggle')?.classList.remove('active');
+      }
+    });
+  });
+}
+
+
 
 /* ---- Accordion Navigation ---- */
 function initSidebarNav() {
@@ -40,11 +72,28 @@ function initSidebarNav() {
 /* ---- Highlight Active Page ---- */
 function highlightActivePage() {
   const currentPath = window.location.pathname;
+  const params = new URLSearchParams(window.location.search);
+  const contentParam = params.get('p') || window.location.hash.slice(1);
   const navLinks = document.querySelectorAll('.nav-link, .nav-submenu a');
 
   navLinks.forEach(link => {
+    link.classList.remove('active');
     const href = link.getAttribute('href');
-    if (href && (currentPath === href || currentPath.startsWith(href + '/'))) {
+    if (!href) return;
+
+    // Check for exact match or parameter match
+    const isExact = (currentPath === href || currentPath === href + '.html' || currentPath === href.replace(/\.html$/, ''));
+    
+    let isParamMatch = false;
+    if (contentParam) {
+      const linkParams = new URL(href, window.location.origin).searchParams;
+      const linkP = linkParams.get('p');
+      if (linkP && linkP === contentParam) {
+        isParamMatch = true;
+      }
+    }
+
+    if (isExact || isParamMatch) {
       link.classList.add('active');
 
       // If it's a submenu item, open its parent
@@ -55,12 +104,13 @@ function highlightActivePage() {
     }
   });
 
-  // Default: highlight HOME on the root page
-  if (currentPath === '/' || currentPath === '/index.html') {
+  // Default: highlight HOME on the root page if no content param
+  if ((currentPath === '/' || currentPath === '/index.html') && !contentParam) {
     const homeLink = document.querySelector('.nav-link[data-section="home"]');
     if (homeLink) homeLink.classList.add('active');
   }
 }
+
 
 /* ---- Mobile Hamburger Toggle ---- */
 function initMobileToggle() {

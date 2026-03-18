@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initContentRenderer();
 });
 
+// Handle browser back/forward buttons
+window.addEventListener('popstate', () => {
+  console.log('Popstate event triggered');
+  initContentRenderer();
+});
+
+
 async function initContentRenderer() {
   const container = document.getElementById('content-body');
   const titleEl = document.getElementById('content-title');

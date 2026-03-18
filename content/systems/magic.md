@@ -25,5 +25,5 @@ Magic on aethrya is organized by spell mastery rank and ritual/fluff utility cat
 
 - [Mastery Progression](/page?p=classes/mastery-progression)
 - [Becoming A Master](/page?p=classes/becoming-a-master)
-- [Combat Rules](/page?p=rules/combat-rules)
+- [Combat Rules](/page?p=combat/combat-rules)
 
