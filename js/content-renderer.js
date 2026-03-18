@@ -17,20 +17,6 @@ async function initContentRenderer() {
   if (!container) return;
 
   // Determine content path from URL
-  // Supports: /page.html?p=rules/general-rules
-  //       or: /page.html#rules/general-rules
-  //       or: URL search param
-  const params = new URLSearchParams(window.location.search);
-  let contentPath = params.get('p') || window.location.hash.slice(1);
-
-  if (!contentPath) {
-    container.innerHTML = '<p class="content-error">No content specified. Navigate from the sidebar or homepage.</p>';
-    return;
-  }
-
-  // Clean the path
-  contentPath = contentPath.replace(/^\//, '').replace(/\.md$/, '');
-
   // Build the fetch URL
   const mdUrl = `/content/${contentPath}.md`;
 
