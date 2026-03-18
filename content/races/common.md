@@ -11,13 +11,15 @@ Common races are those most typically found forming civilizations along the Swor
 
 ## Available Races
 
-- **[Dwarves](/page?p=races/dwarves)**
-- **[Gnome](/page?p=races/gnome)**
-- **[Half-Elf](/page?p=races/half-elf)**
-- **[Half-Orc](/page?p=races/half-orc)**
-- **[Halfling](/page?p=races/halfling)**
-- **[Human](/page?p=races/human)**
-- **[Moon Elf](/page?p=races/moon-elf)**
-- **[Sun Elf](/page?p=races/sun-elf)**
-- **[Svirfneblin](/page?p=races/svirfneblin)**
-- **[Wood Elf](/page?p=races/wood-elf)**
+<div class="button-grid">
+    <a href="/page?p=races/dwarves" class="btn-overview">DWARVES</a>
+    <a href="/page?p=races/gnome" class="btn-overview">GNOME</a>
+    <a href="/page?p=races/half-elf" class="btn-overview">HALF-ELF</a>
+    <a href="/page?p=races/half-orc" class="btn-overview">HALF-ORC</a>
+    <a href="/page?p=races/halfling" class="btn-overview">HALFLING</a>
+    <a href="/page?p=races/human" class="btn-overview">HUMAN</a>
+    <a href="/page?p=races/moon-elf" class="btn-overview">MOON ELF</a>
+    <a href="/page?p=races/sun-elf" class="btn-overview">SUN ELF</a>
+    <a href="/page?p=races/svirfneblin" class="btn-overview">SVIRFNEBLIN</a>
+    <a href="/page?p=races/wood-elf" class="btn-overview">WOOD ELF</a>
+</div>

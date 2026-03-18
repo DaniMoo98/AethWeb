@@ -11,10 +11,12 @@ Limited or Fabled races are those of legend, whispered about in taverns but rare
 
 ## Available Races
 
-- **[Hag](/page?p=races/hag)**
-- **[Half-Dragon](/page?p=races/half-dragon)**
-- **[Mind Flayers](/page?p=races/mind-flayers)**
-- **[Movanic Deva](/page?p=races/movanic-deva)**
-- **[True Giants](/page?p=races/true-giants)**
-- **[True Vampire](/page?p=races/true-vampire)**
-- **[Werewolf](/page?p=races/werewolf)**
+<div class="button-grid">
+    <a href="/page?p=races/hag" class="btn-overview">HAG</a>
+    <a href="/page?p=races/half-dragon" class="btn-overview">HALF-DRAGON</a>
+    <a href="/page?p=races/mind-flayers" class="btn-overview">MIND FLAYERS</a>
+    <a href="/page?p=races/movanic-deva" class="btn-overview">MOVANIC DEVA</a>
+    <a href="/page?p=races/true-giants" class="btn-overview">TRUE GIANTS</a>
+    <a href="/page?p=races/true-vampire" class="btn-overview">TRUE VAMPIRE</a>
+    <a href="/page?p=races/werewolf" class="btn-overview">WEREWOLF</a>
+</div>
